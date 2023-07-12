@@ -14,3 +14,112 @@ specific part of the page, meaning like if you had something you repeated on eve
 PAGE SPECIFIC Page specific styles. (Styles used only on particular pages)
 MEDIA QUERIES*/
 
+/* Body */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.18em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+/* Image */
+
+img {
+  width: 100%;
+}
+
+
+
+
+/* links */
+
+a {
+  color: #000000;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #313131;
+}
+a:hover,
+a:focus {
+  color: #abd5e9;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #216483;
+}
+
+
+/* Buttons */
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #bfd3e3;
+  color: #000000; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid #2a83ac;
+  border-radius: 10px;
+  /* border-bottom: 2px solid #216483; width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: #216483;
+}
+
+.button.contact {
+  background-color: bfd3e3;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #2a83ac;
+}
+
+.button.contact:hover {
+  background-color: #bfd3e3;
+  color: #000000;
+}
+
+.button.resume {
+  background-color:  #bfd3e3;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #2a83ac;
+}
