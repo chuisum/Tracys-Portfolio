@@ -1,7 +1,6 @@
 /* 
 Colors used
-Primary color (lilac): #F8F8FF ;
-Secondary Color (button): #BFD3E3;
+Primary color (lilac): #e6e6ff ;
 */
 
 /*GENERAL Body
@@ -13,6 +12,12 @@ specific part of the page, meaning like if you had something you repeated on eve
  – put that here.)
 PAGE SPECIFIC Page specific styles. (Styles used only on particular pages)
 MEDIA QUERIES*/
+
+
+
+* {
+  box-sizing: border-box;
+}
 
 /* Body */
 
@@ -56,6 +61,14 @@ p {
 
 img {
   width: 100%;
+}
+
+/* header */
+
+header {
+  background-color: #e6e6ff;
+  padding: 10px;
+  /* margin: 10px; */
 }
 
 
@@ -122,4 +135,83 @@ a:active { /* selected link */
   color: #000000;
   text-transform: uppercase;
   border: 2px solid #2a83ac;
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+#work .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right for index page */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #e6e6ff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+    width: [object Object]px; 
+    height: [object Object]px; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 00;
+  color: #222121;
+}
+
+nav > ul > li > a:visited { /* visited link */
+  color: #636262;
+}
+nav > ul > li > a:hover {
+  color: #abd5e9;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active { /* selected link */
+  color: #216483;
+}
+
+/* Hero */
+
+#hero {
+  background-color: #e6e6ff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
