@@ -52,10 +52,10 @@ h3 {
   font-weight: 400;
 }
 
-p {
+/* p {
   font-size: 1.25em;
   font-weight: 300;
-}
+} */
 
 /* Image */
 
@@ -123,6 +123,7 @@ a:active { /* selected link */
   color: #000000;
   text-transform: uppercase;
   border: 2px solid #2a83ac;
+  
 }
 
 .button.contact:hover {
@@ -184,10 +185,9 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 00;
+  font-weight: 500;
   color: #222121;
 }
 
@@ -212,6 +212,62 @@ nav > ul > li > a:active { /* selected link */
   width: 100%;
 }
 
+
+
 main {
   padding-top: 133px;
 }
+
+/* About page */
+
+#about, #story {
+  text-align: center;
+}
+
+#story {
+  background-color: #e6e6ff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 15px;
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 16px;
+}
+
+ul > li {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* footer */
+
+#contact .container  {
+  text-align: center;
+}
+
+#contact .container > p {
+  text-align: center;
+}
+
+#contact .icon > ul {
+  list-style-type: none;
+  padding: 5px 0;
+}
+#contact .icon > ul > li {
+  display: inline-block;
+}
+#contact .icon > ul > li > a {
+  padding: 0 10px;
+}
+
