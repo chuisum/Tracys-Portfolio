@@ -250,6 +250,15 @@ ul > li {
   font-weight: 400;
 }
 
+.row div {
+  float: left;
+  padding-right: 40px; 
+}
+.column {
+ padding-bottom: 40px;
+}
+
+
 /* footer */
 
 #contact .container  {
