@@ -252,10 +252,7 @@ ul > li {
 
 .row div {
   float: left;
-  padding-right: 40px; 
-}
-.column {
- padding-bottom: 40px;
+  margin: 0 10px;
 }
 
 
@@ -279,4 +276,8 @@ ul > li {
 #contact .icon > ul > li > a {
   padding: 0 10px;
 }
+
+
+
+/* media queries */
 
