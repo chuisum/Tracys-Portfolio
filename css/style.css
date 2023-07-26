@@ -251,6 +251,7 @@ ul > li {
 }
 
 .row div {
+  box-sizing: border-box;
   float: left;
   margin: 0 10px;
 }
@@ -259,6 +260,11 @@ ul > li {
 /* footer */
 
 #contact .container  {
+  text-align: center;
+}
+
+#contact .container > h2  {
+  display: inline-block;
   text-align: center;
 }
 
