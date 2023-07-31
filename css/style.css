@@ -72,8 +72,6 @@ header {
 }
 
 
-
-
 /* links */
 
 a {
@@ -153,6 +151,10 @@ a:active { /* selected link */
   text-align: center; /* Centers text */
 }
 
+#hero p {
+  text-align: center;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -162,12 +164,12 @@ header {
   text-align: center;
   padding: 10px 0;
   width: 100%;
-    width: [object Object]px; 
-    height: [object Object]px; 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    position: fixed; 
+  width: [object Object]px; 
+  height: [object Object]px; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: fixed; 
 }
 
 nav {
@@ -206,13 +208,16 @@ nav > ul > li > a:active { /* selected link */
 /* Hero */
 
 #hero {
+  text-align: center;
   background-color: #e6e6ff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-
+#hero span {
+  display: block;
+}
 
 main {
   padding-top: 133px;
@@ -240,6 +245,7 @@ p {
 
 h2 {
   text-align: center;
+  box-sizing: border-box;
 }
 h3 {
   font-size: 16px;
@@ -251,10 +257,12 @@ ul > li {
 }
 
 .row div {
+  display: block;
   box-sizing: border-box;
   float: left;
   margin: 0 10px;
 }
+
 
 
 /* footer */
@@ -265,6 +273,7 @@ ul > li {
 
 #contact .container > h2  {
   display: inline-block;
+  width: 100%;
   text-align: center;
 }
 
@@ -287,3 +296,47 @@ ul > li {
 
 /* media queries */
 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
