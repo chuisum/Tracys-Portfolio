@@ -62,9 +62,8 @@ h3 {
 
 img {
   width: 100%;
- 
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* header */
@@ -101,12 +100,12 @@ a:active { /* selected link */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #f0f8ff;
+  background-color: #e6e6ff;
   color: #000000; /* needed to override the default link color */
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border: 2px solid #2a83ac;
+  border: 2px solid #a1a1b7;
   border-radius: 10px;
   /* border-bottom: 2px solid #216483; width of the border, type, color */
   transition: 0.2s opacity;
@@ -115,33 +114,35 @@ a:active { /* selected link */
 
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
- 
+  background-color: #ffffff;
 }
 
 .button:active {
-  color: #216483;
+  color: #8989e7;
 }
 
 .button.contact {
-  background-color: #f0f8ff;
+  background-color: #e6e6ff;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid #2a83ac;
+  border: 2px solid #a1a1b7;
   
 }
 
 .button.contact:hover {
-  background-color: #f0f8ff;
+  background-color: #ffffff;
   color: #000000;
 }
 
 .button.resume {
-  background-color:  #f0f8ff;
+  background-color:  #e6e6ff;
   color: #000000;
   text-transform: uppercase;
-  border: 2px solid #2a83ac;
+  border: 2px solid #a1a1b7;
 }
-
+.button.resume:hover {
+  background-color:  #ffffff;
+}
 
 /* Layout styling */
 
@@ -315,7 +316,9 @@ ul > li {
 /* footer */
 
 #contact .container  {
+  background-color: #e6e6ff;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 #contact .container > h2  {
@@ -438,6 +441,11 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .logo {
+    max-width: 150px;
+    padding-top: 20px;
+  }
 
   body {
     background-color: #ffffff;
